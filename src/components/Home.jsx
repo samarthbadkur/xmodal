@@ -28,8 +28,7 @@ const XModal = () => {
     } else {
       document.removeEventListener("mousedown", handleClickOutside);
     }
-    return () =>
-      document.removeEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isOpen]);
 
   const handleChange = (e) => {
@@ -77,10 +76,10 @@ const XModal = () => {
           className="modal"
           style={{
             position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100vw",
-            height: "100vh",
+            top: "5vh",
+            left: "5vw",
+            width: "90vw",
+            height: "90vh",
             background: "rgba(0,0,0,0.3)",
             display: "flex",
             justifyContent: "center",
